@@ -1,0 +1,767 @@
+/* Table of Contents */
+
+/* GLOBAL STYLES */
+  /* Buttons */
+  /* Boxes */
+  /* Flex */
+/* CASE STUDY */
+  /* Hero */
+  /* Problem-solution */
+  /* Role Deliverables Tools */
+  /* Segue */
+  /* Screenshots */
+  /* PROCESS */
+    /* Competitive Analysis */
+    /* User Research */
+    /* Personas */
+    /* User Stories */
+    /* User Flows */
+    /* Wireframes */
+    /* Branding */
+    /* HiFi Prototype */
+    /* Preference Testing */
+  /* Conclusion */
+/* Media Queries */
+
+
+/* GLOBAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Karla;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .8rem;
+}
+
+h2 {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FBDC84 65%);
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  margin: 0 0 5% 0;
+  text-transform: uppercase;
+  /* text-align: center; */
+}
+
+h3 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.navbar {
+  align-items: center;
+  background-color: #FBDC84;
+  display: grid;
+  font-size: 2.4rem;
+  font-weight: bold;
+  grid-template-columns: repeat(14, 1fr);
+  padding: .9rem;
+  text-transform: uppercase;
+}
+
+  .navbar .about {
+    grid-column: 13;
+  }
+
+  .navbar .work {
+    grid-column: 11;
+  }
+
+  .navbar .logo {
+    grid-column: 2;
+  }
+
+  .navbar .logo img {
+    width: 4.8rem;
+  }
+
+footer {
+  background-color: #363532;
+  /* grid-area: footer; */
+  padding: 3.2rem;
+}
+
+  footer ul {
+    text-align: center;
+  }
+
+  footer ul li {
+    display: inline-block;
+    padding: 1.6rem;
+  }
+
+  footer ul li a {
+    font-size: 3.2rem;
+    color: #FBDC84;
+  }
+
+/* Buttons */
+
+.yellow-button {
+  background-color: #FBDC84;
+  font-weight: bold;
+  margin: 5% auto auto auto;
+  max-width: 32rem;
+  padding: 5%;
+  text-align: center;
+}
+
+/* Boxes */
+
+.grey-box, .yellow-box, .yellow-box-thin {
+  background-color: #fff;
+  padding: 5%;
+  margin: 5%;
+}
+
+.grey-box {
+  border: .8rem solid #E6E6E6;
+}
+
+.yellow-box {
+  border: .8rem solid #FBDC84;
+  /* max-width: 80%; */
+}
+
+.yellow-box-thin {
+  border: .4rem solid #FBDC84;
+  margin: 5% auto 5% auto;
+  max-width: 80%;
+}
+
+/* Lists */
+
+.feedback-list p {
+  display: inline-block;
+  max-width: 40rem;
+}
+
+.list-num {
+  background-color: #E6E6E6;
+  border: .8rem solid #FBDC84;
+  border-radius: 100%;
+  display: inline-block;
+  font-family: Roboto Slab;
+  font-size: 2.4rem;
+  height: 5.6rem;
+  line-height: 4rem;
+  text-align: center;
+  width: 5.6rem;
+}
+
+/* Flex */
+
+.flex {
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  grid-area: flex;
+  justify-content: space-between;
+  /* width: 80%; */
+  /* margin: auto; */
+}
+
+.top-left, .bottom-right {
+  max-width: 48rem;
+}
+
+.bottom-right {
+  flex-grow: 1;
+}
+
+/* HOMEPAGE */
+
+/* Hero grid */
+
+.homepage-hero {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.homepage-hero img {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  opacity: .7;
+  width: 100%;
+}
+
+.homepage-hero h1 {
+  /* font-size: 1.8rem; */
+  line-height: 2.4rem;
+}
+
+.hero-headline {
+  grid-column: 3 / span 4;
+  grid-row: 1;
+  padding: 10%;
+  z-index: 1;
+}
+
+/* Projects  */
+
+.project {
+  /* border: 1.6rem solid #E6E6E6; */
+  flex-grow: 1;
+  /* grid-area: project; */
+  /* margin: 2rem;
+  padding: 2rem; */
+  width: 85%;
+  min-width: 20rem;
+  max-width: 50rem;
+  text-align: center;
+  align-self: center;
+}
+
+.project img {
+  width: 100%;
+  /* box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25); */
+}
+
+/* Contact */
+
+.contact h4 {
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.contact img {
+  border: .8rem solid #E6E6E6;
+  border-radius: 100%;
+  display: block;
+  margin: 5% auto auto auto;
+  width: 50%;
+}
+
+/* CASE STUDY */
+
+/* Hero */
+
+.case-study-hero {
+  align-items: center;
+  background-image: url('../images/case-study-hero.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* height: 100%; */
+  justify-content: space-evenly;
+}
+
+  .case-study-headline {
+    background-color: #fff;
+    min-width: 30rem;
+    max-width: 40rem;
+    text-align: center;
+    width: 45%;
+  }
+
+  .case-study-hero img {
+    width: 85%;
+    max-width: 50rem;
+  }
+
+.case-study-intro {
+  margin: 3rem auto auto auto;
+  max-width: 60rem;
+  text-align: center;
+  width: 65%;
+}
+
+/* Sections */
+
+/* Problem-solution */
+
+.problem, .solution {
+  align-self: center;
+  max-width: 50rem;
+  width: 90%;
+}
+
+/* Role Deliverables Tools */
+
+.role, .deliverables, .tools {
+  text-align: center;
+  margin: 2rem;
+  min-width: 20rem;
+  flex-grow: 1;
+}
+
+.deliverables {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-rows: auto; */
+  grid-template-areas:
+    "h2 h2"
+    "column-1 column-2";
+  justify-items: center;
+}
+
+.deliverables h2 {
+  grid-area: h2;
+}
+
+.column-1 {
+  grid-area: column-1;
+}
+
+.column-2 {
+  grid-area: column-2;
+}
+
+/* Segue */
+
+.segue {
+  max-width: 60rem;
+  margin: 5% auto 5% auto;
+  width: 80%;
+}
+
+.segue p {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Screenshots */
+
+.screenshots {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); */
+  /* grid-template-areas:
+    ". spil-homepage" "spil-dashboard ."
+    ". spil-homepage" "spil-board ."; */
+  width: 80%;
+  margin: auto;
+}
+
+.screenshots img {
+  width: 100%;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+  max-width: 60rem;
+  margin: auto;
+}
+
+.spil-homepage {
+  /* grid-area: spil-homepage; */
+  /* width: 50%; */
+  grid-row: 1 / span 2;
+  /* grid-column: 2; */
+}
+
+.spil-dashboard {
+  /* grid-area: spil-dashboard; */
+  /* grid-column: 2 / span 2; */
+  grid-column: 2;
+  grid-row: 1;
+  /* width: 50%; */
+}
+
+.spil-board {
+  /* grid-area: spil-board; */
+  grid-row: 2;
+  grid-column: 2;
+}
+
+/* PROCESS */
+
+/* Competitive Analysis */
+
+.competitor-logos {
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.competitor-logos img {
+  /* padding: 2rem; */
+  width: 8rem;
+  margin: 1.5rem;
+}
+
+.comp-analysis-chart {
+  /* border: .4rem solid #FBDC84; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20% auto auto auto;
+  justify-items: center;
+  /* justify-content: start; */
+  align-items: center;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  /* padding: 4rem; */
+  /* margin: 2rem; */
+  width: 100%;
+  max-width: 48rem;
+}
+
+  .comp-analysis-chart img {
+    width: 5.6rem;
+  }
+
+  .comp-analysis-chart p {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .thumbs-up {
+    grid-column: 2;
+    grid-row: 1;
+    /* align-self: center; */
+    /* width: 3.2rem; */
+    /* text-align: center; */
+  }
+
+  .thumbs-down {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .chart-logo1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .chart-logo2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .chart-logo3 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .chart-left-1 {
+    grid-column: 2;
+    grid-row: 2;
+    /* border-bottom: .4rem solid #FBDC84; */
+  }
+
+  .chart-left-2 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .chart-left-3 {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .chart-right-1 {
+    grid-column: 3;
+    grid-row: 2;
+    /* border-bottom: .4rem solid #FBDC84; */
+  }
+
+  .chart-right-2 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .chart-right-3 {
+    grid-column: 3;
+    grid-row: 4;
+  }
+
+/* User Research */
+
+.user-research .bottom-right li {
+  display: grid;
+  grid-template-columns: 10rem 20rem;
+  grid-template-rows: auto auto;
+  padding: 1rem;
+}
+
+.pct {
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 4.8rem;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.user-research img {
+  width: 8rem;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.user-research .bottom-right {
+  align-self: center;
+}
+
+.user-research .bottom-right p {
+  font-family: Roboto Slab;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Personas */
+
+.personas h4 {
+  font-weight: bold;
+  /* line-height: 24px; */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.personas img {
+  /* width: 25.6rem; */
+  margin: auto;
+  width: 80%;
+  /* align-self: center; */
+}
+
+.personas li {
+  padding: 2rem;
+  /* align-items: center; */
+  /* width: 50%; */
+}
+
+.block-quote {
+  border-left: .8rem solid #FBDC84;
+  display: block;
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-left: 1rem;
+  margin: 2rem 0 0 0;
+  /* width: 25.6rem; */
+  width: 65%;
+}
+
+/* User Stories */
+
+/* .user-stories-flex {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* User Flows */
+
+/* .user-flows-flex {
+  display: flex;
+  flex-direction: column;
+} */
+
+.user-flows img {
+  width: 80%;
+  /* margin: auto; */
+}
+
+/* Wireframes */
+
+/* .wireframes-flex {
+  display: flex;
+  flex-direction: column;
+} */
+
+.wireframes img {
+  margin: auto;
+  width: 80%;
+}
+
+
+
+/* .wireframes .bottom-right p {
+  display: inline-block;
+  max-width: 40rem;
+} */
+
+/* Branding */
+
+/* .branding-flex {
+  display: flex;
+  flex-direction: column;
+} */
+
+.branding img {
+  /* display: inline;
+  margin: 2rem;
+  max-width: 50rem; */
+  width: 80%;
+}
+
+/* .branding p {
+  max-width: 50rem;
+} */
+
+/* .style-guide-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 58rem; change for desktop
+  justify-content: space-evenly;
+  text-align: center;
+} */
+
+/* .style-guide p {
+  background-color: #FBDC84;
+  font-weight: bold;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+} */
+
+.color-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 9.6rem 9.6rem;
+  grid-template-rows: 9.6rem 9.6rem;
+}
+
+.color-1 {
+  background-color: #FFB955;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.color-2 {
+  background-color: #7E7E7E;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.color-3 {
+  background-color: #FFEDD4;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.color-4 {
+  background-color: #DDDDDD;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.color-5 {
+  background-color: #F38B63;
+  width: 9.6rem;
+  height: 9.6rem;
+}
+
+/* HiFi Prototype */
+
+/* .hifi-mockup-flex {
+  display: flex;
+  flex-direction: column;
+} */
+
+.hifi-mockup img {
+  width: 80%;
+}
+
+/* .hifi-mockup .bottom-right p {
+  display: inline-block;
+  max-width: 40rem;
+} */
+
+
+/* .hifi-mockup-flex * {
+  max-width: 50rem;
+} */
+
+/* Preference testing */
+
+/* .pref-testing-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+} */
+
+.pref-testing img {
+  width: 80%;
+}
+
+/* .pref-testing-flex * {
+  max-width: 50rem;
+} */
+
+/* Conclusion */
+
+/* .project {
+  max-width: 57rem;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+} */
+
+/* .project {
+  border: 1.6rem solid #E6E6E6;
+  flex-grow: 1;
+  grid-area: project;
+  margin: 2rem;
+  padding: 2rem;
+  width: 45%;
+  min-width: 20rem;
+} */
+
+
+/* Media queries */
+
+@media screen and (min-width: 57rem) {
+  /* .project {
+    width: 100%;
+  } */
+  html {
+    font-size: 12px;
+  }
+  /* .flex, .case-study-hero-flex, .problem-solution-flex, .role-deliverables-tools, .screenshots, .comp-analysis-flex, .user-research-flex, .personas-flex, .user-stories-flex, .wireframes-flex, .branding-flex, .style-guide-flex, .hifi-mockup-flex, .pref-testing-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
+  p {
+    line-height: 3.4rem;
+  }
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .top-left, .bottom-right {
+    max-width: 45%;
+  }
+  .grey-box, .yellow-box {
+    padding: 3%;
+    margin: 3%;
+  }
+  .yellow-box {
+    margin: 3% auto 3% auto;
+  }
+  .case-study-hero {
+    height: 50rem;
+  }
+  .case-study-intro {
+    margin: -6rem auto auto auto;
+  }
+  .project {
+    max-width: 47rem;
+}
