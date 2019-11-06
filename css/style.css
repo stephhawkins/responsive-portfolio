@@ -202,6 +202,7 @@ footer {
   grid-template-columns: repeat(8, 1fr);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  /* background-image: url('../images/case-study-hero.png') center center cover no-repeat fixed; */
 }
 
 .homepage-hero img {
@@ -685,6 +686,11 @@ footer {
     font-size: 4rem;
     line-height: 4rem;
   }
+  /* Nav */
+  .navbar .work {
+    grid-column: 12;
+  }
+  .navar
   /* Case Study */
   .wireframes .bottom-right, .branding .bottom-right, .hifi-mockup .bottom-right, .pref-testing .bottom-right {
     margin: 4rem 0 0 5%;
