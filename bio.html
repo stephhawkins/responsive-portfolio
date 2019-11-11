@@ -8,7 +8,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navigation -->
@@ -20,7 +20,7 @@
           </a>
         </li>
         <li class="work">
-          <a href="index.html">
+          <a href="index.html#work-anchor">
             <h3>Work</h3>
           </a>
         </li>
@@ -32,24 +32,25 @@
       </ul>
     </nav>
     <!-- Hero container -->
-    <section class="homepage-hero">
-      <div class="hero-headline yellow-box">
-        <h1>Hi, I'm Steph <br> and I'm a product designer <br> in Los Angeles, CA</h1>
+    <section class="case-study-hero">
+      <div class="case-study-hero-container flex">
+        <div class="bio-headline yellow-box">
+          <h3>ABOUT ME:</h3>
+          <h1>Designing with purpose</h1>
+          <h4>Stephanie Hawkins</h4>
+        </div>
+        <div class="bio-polaroid">
+          <img src="images/packing-list.png" class="bio-img" alt="">
+          <p>These were the contents of the backpack I carried from Mexico to Argentina on a mission to learn Spanish in one year’s time.</p>
+        </div>
       </div>
-      <img src="images/hero.png" alt="hello world">
     </section>
     <!-- Main container -->
     <section class="main-container">
-      <!-- Packing list image -->
-      <img src="images/packing-list.png" class="bio-img" alt="Everything in my backpack">
-      <!-- Segue -->
-      <div class="segue yellow-box">
-        <p>And, these were the contents of the backpack I carried from Mexico to Argentina on a mission to learn Spanish in one year’s time.</p>
-      </div>
       <!-- Grid -->
       <section class="bio-grid">
         <!-- Bio -->
-        <section class="bio-text grey-box">
+        <section class="bio-text">
           <h2>THE STORY</h2>
           <p>My goal was to simplify: to cut away the habits I had grown from 30 years of United-States-city-living. From accepting the status quo to sacrificing sleep or daily kindnesses, I hoped to replace these habits with ones I could grow by living more purposefully. To do that, I knew I had to do the uncomfortable thing and break away from the path of least resistance. That path had acted like a current that propelled me to do more of the same - work the same job, live in the same city, read the same headlines.
           <br>
@@ -71,11 +72,13 @@
         <!-- Segue -->
         <div class="segue yellow-box">
           <p>P.S. Here's where I landed:</p>
-        </div
+        </div>
         <!-- Priorities -->
-        <aside class="priorities grey-box">
-          <h2>6 DAILY PRIORITIES</h2>
-          <h3>for a happy Steph</h3>
+        <aside class="priorities">
+          <div class="priorities-header">
+            <h2>6 DAILY PRIORITIES</h2>
+            <h3>for a happy Steph</h3>
+          </div>
           <div class="feedback-grid">
             <div class="list-num num-one">
               1
@@ -123,7 +126,7 @@
           </div>
         </aside>
       </section>
-      <div class="project contact grey-box">
+      <div class="project contact">
         <h2>Keep in touch</h2>
         <img src="images/headshot.png" alt="">
         <h4>Thanks for stopping by.</h4>
