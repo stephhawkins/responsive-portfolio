@@ -513,10 +513,6 @@ footer {
   grid-row: 1;
 }
 
-.user-research .flex .bottom-right {
-  margin: 0 auto;
-}
-
 .user-research img {
   grid-column: 1;
   grid-row: 1 / span 2;
@@ -527,6 +523,7 @@ footer {
   display: grid;
   grid-template-columns: 10rem 20rem;
   grid-template-rows: auto auto;
+  justify-content: center;
   padding: 1rem 0;
   width: 48rem;
   text-align: left;
