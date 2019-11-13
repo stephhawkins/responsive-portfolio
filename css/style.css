@@ -186,6 +186,7 @@ footer {
 
 .flex {
   align-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   grid-area: flex;
@@ -307,6 +308,7 @@ footer {
 .main-container {
   margin: 0 auto;
   width: 95%;
+  overflow: hidden;
 }
 
 /* Sections */
@@ -330,7 +332,7 @@ footer {
 
 .role, .deliverables, .tools {
   text-align: center;
-  margin: 2rem;
+  margin: 4rem auto;
 }
 
 .role {
@@ -349,7 +351,7 @@ footer {
     "h2 h2"
     "column-1 column-2";
   justify-items: center;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 .deliverables h2 {
@@ -358,10 +360,12 @@ footer {
 
 .column-1 {
   grid-area: column-1;
+  min-width: 20rem;
 }
 
 .column-2 {
   grid-area: column-2;
+  min-width: 20rem;
 }
 
 /* Segue */
@@ -507,6 +511,10 @@ footer {
   grid-row: 1;
 }
 
+.user-research .flex .bottom-right {
+  margin: 0 auto;
+}
+
 .user-research img {
   grid-column: 1;
   grid-row: 1 / span 2;
@@ -595,6 +603,10 @@ footer {
   grid-row-gap: 3rem;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
+}
+
+.feedback-grid .list-num {
+  align-self: start;
 }
 
 .bottom-right h2 {
@@ -770,6 +782,7 @@ footer {
 
 @media screen and (min-width: 47.5rem) {
   .flex {
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
   }
