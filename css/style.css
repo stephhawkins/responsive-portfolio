@@ -170,6 +170,7 @@ footer {
 /* Lists */
 
 .list-num {
+  align-self: start;
   background-color: #E6E6E6;
   border: .8rem solid #FBDC84;
   border-radius: 100%;
@@ -605,9 +606,9 @@ footer {
   grid-template-rows: auto auto auto;
 }
 
-.feedback-grid .list-num {
+/* .feedback-grid .list-num {
   align-self: start;
-}
+} */
 
 .bottom-right h2 {
   margin-top: 2rem;
