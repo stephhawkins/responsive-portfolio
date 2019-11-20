@@ -210,7 +210,7 @@ footer {
 
 .homepage-hero {
   align-items: center;
-  background-image: url('../images/homepage-hero.png');
+  background-image: url('../images/homepage-hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -219,7 +219,7 @@ footer {
 }
 
 .homepage-hero h1 {
-  line-height: 2.4rem;
+  line-height: 2.8rem;
 }
 
 .hero-headline {
@@ -269,7 +269,7 @@ footer {
 
 .case-study-hero {
   align-items: center;
-  background-image: url('../images/homepage-hero.png');
+  background-image: url('../images/homepage-hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-evenly;
@@ -802,7 +802,7 @@ footer {
   /* Type */
   .homepage-hero h1 {
     font-size: 4rem;
-    line-height: 4rem;
+    line-height: 5rem;
   }
   /* Nav */
   .navbar .work {
