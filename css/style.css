@@ -440,81 +440,30 @@ footer {
 }
 
 .comp-analysis-chart {
-  align-items: center;
-  display: grid;
-  grid-column-gap: 2rem;
-  grid-row-gap: 3rem;
-  grid-template-columns: 10% 40% 40%;
-  grid-template-rows: 20% auto auto auto;
-  justify-items: center;
-  margin: 0 2rem 5rem 0;
-  padding-bottom: 5rem;
-  width: 100%;
-  max-width: 48rem;
-}
-
-.comp-analysis-chart img {
-  width: 5.6rem;
-}
-
-.comp-analysis-chart p {
-  text-align: center;
   font-size: 1.4rem;
 }
 
-.thumbs-up {
-  grid-column: 2;
-  grid-row: 1;
+.comp-analysis-chart .logo {
+  width: 5.6rem;
+  margin: 0 2rem;
 }
 
-.thumbs-down {
-  grid-column: 3;
-  grid-row: 1;
+tr:hover {
+  background-color: #f5f5f5;
 }
 
-.chart-logo1 {
-  grid-column: 1;
-  grid-row: 2;
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.chart-logo2 {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.chart-logo3 {
-  grid-column: 1;
-  grid-row: 4;
-}
-
-.chart-left-1 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.chart-left-2 {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.chart-left-3 {
-  grid-column: 2;
-  grid-row: 4;
-}
-
-.chart-right-1 {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.chart-right-2 {
-  grid-column: 3;
-  grid-row: 3;
-}
-
-.chart-right-3 {
-  grid-column: 3;
-  grid-row: 4;
+.row-label {
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 20rem;
 }
 
 /* User Research */
