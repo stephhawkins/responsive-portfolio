@@ -346,7 +346,7 @@ footer {
   margin: 4rem 0;
 }
 
-.role, .deliverables, .tools {
+.role, .deliverables, .deliverables-one-col, .tools {
   text-align: center;
   margin: 4rem auto;
 }
