@@ -412,6 +412,8 @@ footer {
   width: 100%;
 }
 
+/* Spil */
+
 .spil-homepage {
   grid-row: 1 / span 2;
 }
@@ -422,6 +424,27 @@ footer {
 }
 
 .spil-board {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+/* The Bridge */
+
+.bridge-screenshots {
+  grid-gap: 1rem;
+}
+
+.bridge-article {
+  grid-row: 1 / span 2;
+}
+
+.bridge-homepage {
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: 1rem;
+}
+
+.bridge-category {
   grid-row: 2;
   grid-column: 2;
 }
@@ -438,6 +461,10 @@ footer {
   margin: 1.5rem;
   width: 8rem;
 }
+
+  .bridge-comp img {
+    width: 18rem;
+  }
 
 .comp-analysis-chart {
   font-size: 1.4rem;
@@ -558,6 +585,23 @@ th, td {
   width: 100%;
 }
 
+.mobile-wireframe-grid {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.mobile-1 {
+  grid-column: 1;
+}
+
+.mobile-2 {
+  grid-column: 2;
+}
+
+.mobile-3 {
+  grid-column: 3;
+}
+
 .feedback-grid {
   align-items: center;
   display: grid;
@@ -566,10 +610,6 @@ th, td {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
 }
-
-/* .feedback-grid .list-num {
-  align-self: start;
-} */
 
 .bottom-right h2 {
   margin-top: 2rem;
