@@ -82,6 +82,10 @@ a:visited {
   color: #000000;
 }
 
+nav {
+  background-color: #FBDC84;
+}
+
 .navbar {
   align-items: center;
   background-color: #FBDC84;
@@ -89,20 +93,30 @@ a:visited {
   font-size: 2.4rem;
   font-weight: bold;
   grid-template-columns: repeat(14, 1fr);
+  margin: 0 auto;
+  max-width: 140rem;
   padding: .9rem;
   text-transform: uppercase;
 }
 
-  .navbar .about {
-    grid-column: 13;
+  .navbar .logo {
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .navbar .work {
-    grid-column: 11;
+    grid-column: 9;
+    grid-row: 1;
   }
 
-  .navbar .logo {
-    grid-column: 2;
+  .navbar .about {
+    grid-column: 11;
+    grid-row: 1;
+  }
+
+  .navbar .contact-form {
+    grid-column: 13;
+    grid-row: 1;
   }
 
   .navbar .logo img {
@@ -927,7 +941,13 @@ th, td {
   }
   /* Nav */
   .navbar .work {
+    grid-column: 11;
+  }
+  .navbar .about {
     grid-column: 12;
+  }
+  .navbar .contact-form {
+    grid-column: 13;
   }
   /* Intro */
   .role-deliverables-tools {
