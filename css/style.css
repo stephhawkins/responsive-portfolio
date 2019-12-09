@@ -474,8 +474,13 @@ footer {
 }
 
 .comp-analysis-chart .logo {
-  width: 5.6rem;
+  /* width: 5.6rem; */
+  width: 4.2rem;
   margin: 0 2rem;
+}
+
+table img {
+  width: 2.4rem;
 }
 
 tr:hover {
