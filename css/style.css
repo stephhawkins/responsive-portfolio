@@ -160,6 +160,10 @@ footer {
   text-align: center;
 }
 
+.yellow-button:hover {
+  background-color: #F4C461;
+}
+
 #myBtn {
   bottom: 20px;
   border: none;
